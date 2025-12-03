@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Travel Asistant</title>
+    <title>Your Travel Assistant</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
@@ -17,18 +21,102 @@
                 <li><a href="#reviews">Reviews</a></li>
             </ul>
         </nav>
-        <h1 class="header-title">Your<br>Travel<br>Asistent</h1>
+        <div class="header-content">
+            <h1 class="header-title">Your<br>Travel<br>Assistant</h1>
+        </div>
     </header>
+
     <section id="about">
-        <div>
+        <div class="about-text">
             <h2>About Us</h2>
             <p>
-                Leigh McAdam is a Calgary-based writer, photographer and social media enthusiast with over 48,000 followers. Her blog: HikeBikeTravel is frequently cited as one of the top travel and outdoor adventure blogs in Canada, and consistently receives over 135,000 monthly page views. She shares her enthusiasm for the outdoors as a brand ambassador for Sporting Life, and has worked on campaigns for Travel Alberta, Expedia and Flight Hub. Leigh is the author of Discover Canada: 100 Inspiring Outdoor Adventures. Currently, she is co-authoring: 125 Nature Hot Spots in Alberta (spring 2018). A true adventurer, Leigh will try anything once, except perhaps bungee jumping.
+                Leigh McAdam is a Calgary-based writer, photographer and social media enthusiast with over 48,000 followers. Her blog: HikeBikeTravel is frequently cited as one of the top travel and outdoor adventure blogs in Canada, and consistently receives over 135,000 monthly page views. She shares her enthusiasm for the outdoors as a brand ambassador for Sporting Life.
             </p>
         </div>
-        <div>
-            <img src="img/anneliese-phillips-uv4-vl3liKM-unsplash.jpg" alt="">
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Mountains">
         </div>
     </section>
+
+    <section id="whatwedo">
+        <div class="container">
+            <h2>What We Do</h2>
+            <p class="section-desc">Experience nature in its purest form. We organize trips that will leave you breathless and create memories for a lifetime.</p>
+            
+            <div class="icons-grid">
+                <div class="icon-item">
+                    <i class="fas fa-hiking"></i>
+                    <span>Hiking</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-bicycle"></i>
+                    <span>Cycling</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-water"></i>
+                    <span>Surfing</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-car-side"></i>
+                    <span>Car Trips</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ourtrips">
+        <div class="trips-grid">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Trip 1">
+            <img src="https://images.unsplash.com/photo-1496545672479-7ac3764ca215?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Trip 2">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Trip 3">
+            
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Trip 4">
+            <div class="trip-text-box">
+                <h3>Our Trips</h3>
+            </div>
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Trip 5">
+
+            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Trip 6">
+            <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Trip 7">
+            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Trip 8">
+        </div>
+    </section>
+
+    <section id="wheretogo">
+        <div class="cta-container">
+            <div class="cta-left">
+                <h2>Where do you<br>want to go?</h2>
+            </div>
+            <div class="cta-right">
+                <p>Tell us about your dream destination and let us handle the rest. We provide full itinerary planning services tailored to your needs.</p>
+                <a href="#" class="btn">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="User 1">
+                <p>"An unforgettable journey. Highly recommended!"</p>
+                <strong>- Mark Z.</strong>
+            </div>
+            <div class="review-card">
+                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="User 2">
+                <p>"Professional guides and beautiful sceneries."</p>
+                <strong>- Sarah L.</strong>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-gallery">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Gallery">
+            <img src="https://images.unsplash.com/photo-1448375240586-dfd8d3cd6052?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Gallery">
+        </div>
+        <p class="copyright">&copy; 2025 Your Travel Assistant</p>
+    </footer>
+
 </body>
 </html>
