@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    height: 100dvh;
+    background: url("img/scott-goodwill.jpg") center/cover no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-title {
+    text-align: right;
+    position: absolute;
+    color: #fff;
+    right: 25rem;
+    bottom: 5rem;
+    font-size: 5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #33292a;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
+}
+
+nav ul {
+    list-style: none;
+    display: contents;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#about {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 35rem;
+    padding-right: 35rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    gap: 50px;
+}
+
+#about div {
+    max-width: 50%;
+}
+
+#about img {
+    width: 30rem;
+    border-radius: 5px;
+}
