@@ -274,7 +274,7 @@ nav ul li a {
         grid-template-columns: 1fr;
     }
     .trip-text-box{
-        order: 0;
+        order: -1;
     }
     
     nav ul { flex-wrap: wrap; gap: 15px; }
