@@ -276,6 +276,9 @@ nav ul li a {
     .trip-text-box{
         order: -1;
     }
+    .review-card{
+        align-self: center;
+    }
     
     nav ul { flex-wrap: wrap; gap: 15px; }
 }
