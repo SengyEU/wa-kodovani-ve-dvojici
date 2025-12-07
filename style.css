@@ -151,6 +151,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     height: 220px;
+    order: 0;
 }
 
 .trip-text-box h3 {
@@ -271,6 +272,9 @@ nav ul li a {
 
     .trips-grid, .footer-gallery {
         grid-template-columns: 1fr;
+    }
+    .trip-text-box{
+        order: 0;
     }
     
     nav ul { flex-wrap: wrap; gap: 15px; }
