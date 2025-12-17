@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #333;
     line-height: 1.6;
     background-color: #fff;
@@ -15,96 +15,84 @@ body {
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { display: block; max-width: 100%; }
+h2 {
+    font-size: 2rem;
+}
+
 header {
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('img/scott-goodwill.jpg') no-repeat center bottom;
+    height: 100dvh;
+    background: url("img/scott-goodwill.jpg") center/cover no-repeat;
     background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: white;
     position: relative;
 }
 
+.header-title {
+    text-align: right;
+    position: absolute;
+    color: #fff;
+    right: 25rem;
+    bottom: 5rem;
+    font-size: 5rem;
+}
+
 nav {
-    padding: 25px 0;
-    background: #6a4e52;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #33292a;
+    padding: 1.25rem 25rem;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    list-style: none;
+    display: contents;
 }
 
-nav ul li a {
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-}
-
-.header-content {
-    flex: 1;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-bottom: 8%;
-    padding-right: 10%;
-}
-
-.header-title {
-    font-size: 4rem;
-    line-height: 1.1;
-    text-align: right;
-    font-weight: 900;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 #about {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 80px 20px;
+    background-color: #fff;
+    color: #000;
     display: flex;
+    justify-content: space-around;
+    padding: 5rem 25rem;
     align-items: center;
     gap: 50px;
 }
 
-#about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #000;
+#about div {
+    max-width: 50%;
 }
 
-.about-text { flex: 1; }
-.about-text p { text-align: justify; color: #555; }
-
-.about-img { flex: 1; }
-.about-img img {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+#about img {
+    width: 30rem;
+    border-radius: 5px;
 }
 
 #whatwedo {
-    background-color: #3b2e2a; 
+    background-color: #33292a; 
     color: white;
-    padding: 80px 20px;
+    padding: 5rem 25rem;
     text-align: center;
 }
 
-#whatwedo h2 { font-size: 2rem; margin-bottom: 15px; }
+#whatwedo h2 { 
+    margin-bottom: 2rem; 
+}
 
 .section-desc {
-    max-width: 600px;
     margin: 0 auto 50px;
-    color: #ccc;
-    font-size: 0.9rem;
+    color: #fff;
 }
 
 .icons-grid {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 60px;
     flex-wrap: wrap;
 }
@@ -114,39 +102,40 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     width: 100px;
+    margin-bottom: 2rem;
 }
 
-.icon-item i {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+.icon-svg {
+    margin-bottom: 1.5rem;
 }
 
 .icon-item span {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 #ourtrips {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 80px 20px;
+    height: 100dvh;
+    padding: 5rem 25rem;
+    display: grid;
+    place-items: center;
 }
 
 .trips-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .trips-grid img {
     width: 100%;
     height: 220px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .trip-text-box {
-    background-color: #f4f4f4;
+    background-color: #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,25 +144,21 @@ nav ul li a {
 }
 
 .trip-text-box h3 {
-    font-size: 1.8rem;
-    color: #333;
-    text-transform: uppercase;
-    font-weight: 900;
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: bold;
 }
 
 
 #wheretogo {
-    background-color: #6a4e52; 
+    background-color: #644b4f; 
     color: white;
-    padding: 70px 20px;
+    padding: 7rem 25rem;
 }
 
 .cta-container {
-    max-width: 900px;
-    margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 6rem;
 }
 
 .cta-left h2 {
@@ -182,37 +167,51 @@ nav ul li a {
 }
 
 .cta-right {
-    max-width: 400px;
+    flex: 1;
 }
 
 .cta-right p {
-    color: #ddd;
-    font-size: 0.9rem;
-    margin-bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 1rem;
 }
 
 .btn {
     display: inline-block;
     background-color: white;
-    color: #6a4e52;
+    color: #000;
+    margin-top: 2rem;
     padding: 12px 30px;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
 }
 
 #reviews {
-    padding: 80px 20px;
+    padding: 5rem 25rem;
     text-align: center;
     background-color: white;
 }
 
-#reviews h2 { font-size: 2rem; margin-bottom: 40px; }
+#reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem; 
+}
+
+#reviews p {
+    font-size: 16px;
+    line-height: 1.2;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .reviews-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 60px;
+    margin-top: 4rem;
 }
 
 .review-card {
@@ -223,36 +222,49 @@ nav ul li a {
 }
 
 .review-card img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .review-card p {
-    font-style: italic;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    margin-bottom: 1.5rem;
 }
 
 .footer-gallery {
+    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .footer-gallery img {
     width: 100%;
-    height: 350px;
+    height: 400px;
     object-fit: cover;
 }
 
 .copyright {
-    background-color: #222;
-    color: #777;
+    background-color: #333;
+    padding: 2.5rem 25rem;
     text-align: center;
-    padding: 20px;
-    font-size: 0.8rem;
+    color: #fff;
+}
+
+.copyright a {
+    color: #efa69d;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: #e9877b;
+}
+
+.copyright h6 {
+    margin-top: 0.25rem;
 }
 
 @media (max-width: 768px) {
