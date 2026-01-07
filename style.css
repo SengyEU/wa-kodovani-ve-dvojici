@@ -33,6 +33,7 @@ header {
     right: 25rem;
     bottom: 5rem;
     font-size: 5rem;
+    line-height: 1;
 }
 
 nav {
@@ -40,7 +41,7 @@ nav {
     justify-content: space-around;
     flex-direction: row;
     background-color: #33292a;
-    padding: 1.25rem 25rem;
+    padding: 1.25rem 12.5rem;
 }
 
 nav ul {
@@ -267,30 +268,89 @@ nav a {
     margin-top: 0.25rem;
 }
 
+.burger {
+    display: none;
+    background: none;
+    color: white;
+    font-size: 3rem;
+    border: none;
+}
+
+@media (max-width: 992px) {
+    .header-title {
+        right: 5rem;
+        font-size: 8rem;
+    }
+
+    #about, #whatwedo, #ourtrips, #reviews, #wheretogo, .copyright {
+        padding: 5rem 5rem;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul a {
+        font-size: 2rem;
+    }
+
+    nav ul.open {
+        display: block;
+    }
+
+    nav {
+        align-items: end;
+        padding: 1.25rem 5rem;
+        flex-direction: column;
+    }
+
+    .burger {
+        display: block;
+        z-index: 1000;
+    }
+}
+
 @media (max-width: 768px) {
     .header-title {
-        font-size: 3rem;
-        text-align: center;
-        margin: 0 auto 50px;
-        padding: 0;
+        right: 2.5rem;
+        font-size: 4rem;
+        bottom: 2.5rem;
     }
-    
-    .header-content { justify-content: center; padding-right: 0; }
-    
-    #about, .cta-container, .reviews-container {
+
+    #about, #whatwedo, #ourtrips, #reviews, #wheretogo, .copyright {
+        padding: 2.5rem 2.5rem;
         flex-direction: column;
-        text-align: center;
+    }
+
+    .icons-grid, .reviews-container {
+        align-items: center;
+        flex-direction: column;
     }
 
     .trips-grid, .footer-gallery {
         grid-template-columns: 1fr;
     }
+
     .trip-text-box{
         order: -1;
+        height: 110px;
     }
-    .review-card{
-        align-self: center;
+
+    #ourtrips {
+        height: auto;
+    }
+
+    .cta-container {
+        flex-direction: column;
     }
     
-    nav ul { flex-wrap: wrap; gap: 15px; }
+    #about div {
+        max-width: 100%;
+    }  
+
+    nav {
+        padding: 1.25rem 2.5rem;
+    }
 }

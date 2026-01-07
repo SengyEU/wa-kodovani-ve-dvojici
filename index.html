@@ -9,7 +9,8 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <button class="burger" onclick="toggleMenu()">☰</button>
+            <ul class="menu">
                 <li><a href="#about">About us</a></li>
                 <li><a href="#whatwedo">What We Do</a></li>
                 <li><a href="#ourtrips">Our Trips</a></li>
@@ -118,5 +119,19 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".menu");
+            const burger = document.querySelector(".burger");
+
+            menu.classList.toggle("open");
+
+            if (menu.classList.contains("open")) {
+                burger.textContent = "✕";
+            } else {
+                burger.textContent = "☰";
+            }
+        }
+    </script>
 </body>
 </html>
